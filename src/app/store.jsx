@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import gitUsers from "../features/apiSlice";
+import userDetail from "../features/userSlice";
 
 export const store = configureStore({
   reducer: {
-    app: gitUsers,
+    app: userDetail,
   },
 });
+export default store;
